@@ -18,7 +18,7 @@ The identity service is where the users' access to applications and other resour
 
 
 ### Identity CRUD Implementation Concepts
-To understand and explain Identity CRUD implementations we need to define the terminology by defining the follow concepts: Identity CRUD Data Models, Identity CRUD Protocol Roles, Identity CURD Orchestrator Roles, Identity CURD Triggers, and Identity CURD Actions.
+To understand and explain Identity CRUD implementations we need to define the terminology by defining the following concepts: Identity CRUD Data Models, Identity CRUD Protocol Roles, Identity CRUD Orchestrator Roles, Identity CRUD Triggers, and Identity CRUD Actions.
 
 #### Identity CRUD Data Models
 Identities are defined by two types of data entities: Resources and Attributes.
