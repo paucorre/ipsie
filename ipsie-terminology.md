@@ -23,16 +23,9 @@ To understand and explain Identity CRUD implementations we need to define the te
 #### Identity CRUD Data Models
 Identities are defined by two types of data entities: Resources and Attributes.
 ##### Resource Object (RO)
-A JSON object representing a user, group, or an extension object like devices, used by CRUD operations. The Resource Object contains attributes defined by schemas.
+An object representing a user, group, or an extension object like devices, used by CRUD operations. The Resource Object contains attributes defined by schemas.
 ##### Resource Attribute (RA)
 A named element of a Resource Object (RO). It includes characteristics like cardinality (single or multiple values), data types (string, boolean, binary, etc.), and properties (required, unique, etc.).
-
-#### Identity CRUD Protocol Roles
-These roles are generally implemented based on the HTTP protocol, where client and server roles are defined in [RFC9110] and [RFC9112].
-##### Server (also known as a Service Provider)
-An HTTP web application that provides identity information. The server is a RESTful API endpoint offering access to a data model that can be used to push or pull data between two parties. Servers have additional responsibilities, such as API security, managing client identifiers and keys, and performance management, including API throttling.
-##### Client
-A website or application that uses the HTTP protocol to exchange identity data maintained by the service provider. The client usually initiates HTTP requests to a target server. A client is active software that can push or pull data between two parties.
 
 #### Identity CRUD Orchestrator Roles
 Orchestrators are the operating parties that facilitate the exchange of data and ensure it flows correctly. Identity entities can have one or more orchestrator roles, depending on the overall architecture.
